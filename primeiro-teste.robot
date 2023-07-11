@@ -33,7 +33,7 @@ Verificar se o acesso foi permitindo e se o nome do curso está sendo exibido
 
 Meu primeiro teste Alura
     Abrir navegador e acessar o site DevSuperior    
-    Adicionar o login e senha e clicar no botão Entrar      eliezer.moraes@outlook.com      9a7e5i3o1U-
+    Adicionar o login e senha e clicar no botão Entrar      email      senha
     Verificar se o acesso foi permitindo e se o nome do curso está sendo exibido
 
 

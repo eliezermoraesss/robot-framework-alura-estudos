@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.0 on win32)" generated="20230710 21:19:12.406" rpa="false" schemaversion="4">
+<suite id="s1" name="Primeiro-Teste" source="E:\portifolio-pessoal\robot-framework-alura\primeiro-teste.robot">
+<test id="s1-t1" name="Meu primeiro teste Alura" line="34">
+<kw name="Abrir navegador e acessar o site DevSuperior">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230710 21:19:12.722" level="INFO">Opening browser 'Chrome' to base url 'https://learn.devsuperior.com/auth/login'.</msg>
+<status status="PASS" starttime="20230710 21:19:12.722" endtime="20230710 21:19:15.131"/>
+</kw>
+<status status="PASS" starttime="20230710 21:19:12.721" endtime="20230710 21:19:15.131"/>
+</kw>
+<kw name="Adicionar o login e senha e clicar no botão Entrar">
+<arg>eliezer.moraes@outlook.com</arg>
+<arg>9a7e5i3o1U-</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CAMPO_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230710 21:19:15.137" endtime="20230710 21:19:15.181"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_LOGIN}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230710 21:19:15.182" level="INFO">Typing text 'eliezer.moraes@outlook.com' into text field 'id:exampleInputEmail1'.</msg>
+<status status="PASS" starttime="20230710 21:19:15.181" endtime="20230710 21:19:15.352"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CAMPO_PASSWORD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230710 21:19:15.355" endtime="20230710 21:19:15.394"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_PASSWORD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230710 21:19:15.396" level="INFO">Typing text '9a7e5i3o1U-' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230710 21:19:15.395" endtime="20230710 21:19:15.535"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230710 21:19:18.537" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230710 21:19:15.535" endtime="20230710 21:19:18.537"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230710 21:19:18.537" endtime="20230710 21:19:18.558"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//button</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230710 21:19:18.559" level="INFO">Simulating Mouse Over on element '//button'.</msg>
+<status status="PASS" starttime="20230710 21:19:18.558" endtime="20230710 21:19:18.829"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230710 21:19:18.829" level="INFO">Clicking element '//button'.</msg>
+<status status="PASS" starttime="20230710 21:19:18.829" endtime="20230710 21:19:18.883"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230710 21:19:21.883" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230710 21:19:18.883" endtime="20230710 21:19:21.883"/>
+</kw>
+<status status="PASS" starttime="20230710 21:19:15.137" endtime="20230710 21:19:21.884"/>
+</kw>
+<kw name="Verificar se o acesso foi permitindo e se o nome do curso está sendo exibido">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CARD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230710 21:19:21.884" endtime="20230710 21:19:21.916"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${CARD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230710 21:19:21.936" level="INFO">Element '//div[contains(@class, "bg-dark px-5 pb-3 pt-4 border-radius-4 card-offer")]//h5[normalize-space()="Bootcamp Spring React 3.0"]' is displayed.</msg>
+<status status="PASS" starttime="20230710 21:19:21.916" endtime="20230710 21:19:21.936"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230710 21:19:24.936" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230710 21:19:21.936" endtime="20230710 21:19:24.936"/>
+</kw>
+<status status="PASS" starttime="20230710 21:19:21.884" endtime="20230710 21:19:24.937"/>
+</kw>
+<status status="PASS" starttime="20230710 21:19:12.720" endtime="20230710 21:19:24.937"/>
+</test>
+<status status="PASS" starttime="20230710 21:19:12.408" endtime="20230710 21:19:24.938"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Primeiro-Teste">Primeiro-Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
